@@ -15,9 +15,9 @@ function setup() {
 
 	engine = Engine.create();
 	world = engine.world;
-	
+	 paperObject=new paper(200,450,60)
 	groundObject=new ground(width/2,670,width,20);
-        paperObject=new paper(200,450,60)
+       
 	dustbinObj=new dustbin(1200,650);
 	
 	Engine.run(engine);
@@ -31,8 +31,9 @@ function draw() {
  
 
   groundObject.display();
+	  paperObject.display();
   dustbinObj.display();
-  paperObject.display();
+
 }
 
 
